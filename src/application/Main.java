@@ -8,15 +8,8 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        ArrayList<Funcionario> funcionarios = new ArrayList<>();
-        funcionarios.add(new Gerente("Matheus", 5000, 500));
-        funcionarios.add(new Desenvolvedor("Rian", 7000, 900, 45));
-        for (Funcionario f : funcionarios) {
-            System.out.println(f);
-            if (f instanceof Gerente) {
-                Gerente g = (Gerente) f;
-                System.out.println("Bonûs Gerente: " + g.getBonus());
-            }
-        }
+        Funcionario func1 = new Funcionario("Matheus",5000.0);
+        Funcionario func2 = new Desenvolvedor("Matheus Rian",6000.0,500,60);
+        Funcionario func3 = new Gerente("Rian",9000.0,500);
     }
 }

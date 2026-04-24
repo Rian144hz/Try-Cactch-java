@@ -1,6 +1,6 @@
 package entities;
 
-public class Funcionario {
+public  class Funcionario {
     private String nome;
     protected double salarioBase;
 
