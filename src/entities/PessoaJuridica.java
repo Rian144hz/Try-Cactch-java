@@ -19,7 +19,7 @@ public class PessoaJuridica extends Contribuintes { //Classe filha PessoaJuridic
     @Override // Notação @override para dizer que esse método é uma sobreposicao
     public double imposto() { //Método herdado pela classe pai que está sendo implementado um corpo á ela
         double impostoPJ; // Variável impostoPJ usada para calcular o imposto da pessoa jurídica
-        if (numeroDefuncionarios > 10) { // Aqui se numero de funcionarios for maior que dez
+        if (numeroDefuncionarios > 10) { // Aqui s2e numero de funcionarios for maior que dez
             impostoPJ = rendaAnual * 0.14; // Pessoa jurídica so paga quatorze porcento de imposto
         } else {
             impostoPJ = rendaAnual * 0.16; // Caso contrario pessoa jurídica paga dezeceis porcento de imposto
