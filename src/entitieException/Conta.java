@@ -1,6 +1,6 @@
 package entitieException;
 
-import Exception.DomainException;
+import Exception.DomainExceptionn;
 
 public class Conta {
     private Integer numero;
@@ -39,10 +39,10 @@ public class Conta {
     }
     public void sacar(double valor){
         if (valor > limiteSaque){
-            throw new DomainException("O valor excede o limte de saque!");
+            throw new DomainExceptionn("O valor excede o limte de saque!");
         }
            if (valor > saldo){
-               throw  new DomainException("Saldo insuficiente");
+               throw  new DomainExceptionn("Saldo insuficiente");
         }
            saldo-=valor;
     }

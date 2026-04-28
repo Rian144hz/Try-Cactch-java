@@ -1,7 +1,7 @@
 package applicationException;
 
 import entitieException.Conta;
-import Exception.DomainException;
+import Exception.DomainExceptionn;
 
 import java.util.Scanner;
 
@@ -26,7 +26,7 @@ public class Programaa {
             conta.sacar(valor);
             System.out.printf("Novo saldo de %.2f%n",conta.getSaldo());
         }
-        catch (DomainException e){
+        catch (DomainExceptionn e){
             System.out.println("Erro saque: "+e.getMessage());
             e.printStackTrace();
         }
